@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+</head>
+<body>
+
+<!-- th 為Thymeleaf所提供的語法 -->
+Student id : <span th:text="${myStudent.id}"></span><br>
+Student name : <span th:text="${myStudent.name}"></span><br>
+
+<a href="/hello">Go to hello page</a><br>
+
+<img th:src="@{/images/jojo.jpg}"/>
+
+<form method="post" action="/login">
+  帳號：<input type="text" name="userName"><br>
+  密碼：<input type="text" name="password">
+  <input type="submit" value="登入">
+</form>
+</body>
+</html>
